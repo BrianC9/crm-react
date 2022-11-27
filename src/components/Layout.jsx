@@ -1,14 +1,23 @@
-import {Outlet, Link} from 'react-router-dom'
+import {Outlet, Link, useLocation} from 'react-router-dom'
 function Layout() {
+  const location = useLocation();
+  console.log(location)
   return (
-<div>
-    <h1 className="text-6xl font-bold flex justify-center">CRM - React </h1>
+<header className='md:flex md:min-h-screen'>
+    <div className='md:w-1/4 bg-blue-900 px-5 py-10'>
+      <h2 className='text-white text-center text-4xl font-bold'>C.R.M</h2>
+      <nav className='mt-10 text-white flex flex-col'>
+        <Link to={'/newclient'} className="hover:text-blue-300">New Client</Link>
+        <Link to={'/'} className="hover:text-blue-300">Clients</Link>
+        <Link to={'/aboutus'} className="hover:text-blue-300">About Us</Link>
+      </nav>
+
+    </div>
+    <main className='md:w-3/4 bg-zinc-100 md:h-screen overflow-scroll p-10 '>
     <Outlet/>
-    <footer className='bg-slate-200 p-5 mt-3'>
-      <div className='flex justify-center'>Este es el footer de nuestra página</div>
-      <div className='rounded-lg hover:bg-slate-600 hover:text-zinc-300 flex justify-center p-2 active:bg-slate-900'><Link to={"/"}>Volver a inicio 👈</Link></div>
-    </footer>
-</div>  )
+    </main>
+    
+</header>  )
 }
 
 export default Layout

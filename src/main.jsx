@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Layout from './components/Layout'
-import Nosotros from './pages/Nosotros'
+import AboutUs from './pages/AboutUs'
+import NewClient from './pages/NewClient'
+import Index from './pages/Index'
 const router = createBrowserRouter([
   {
     path:'/',
@@ -11,13 +13,17 @@ const router = createBrowserRouter([
     children:[
       {
         index:true,
-        element:<h1>Estás en la homepage</h1>
+        element:<Index/>
       }
       ,
       {
-        path:'/nosotros',
-        element: <Nosotros/>
-    
+        path:'/aboutus',
+        element: <AboutUs/>
+      }
+      ,
+      {
+        path:'/newclient',
+        element: <NewClient/>
       }
     ]
   }
