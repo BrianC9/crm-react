@@ -42,7 +42,6 @@ return clients;
 }
 function Index() {
   const clients= useLoaderData()
-  console.log(clients);
   
 
   return (

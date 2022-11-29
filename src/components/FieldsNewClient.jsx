@@ -3,7 +3,7 @@ const FieldsNewClient = ({cliente}) => {
         <>
             <div className="mb-4">
                 <label
-                    className="text-gray-800"
+                    className="text-gray-800 font-bold"
                     htmlFor="name"
                 >Name:</label>
                 <input 
@@ -16,7 +16,7 @@ const FieldsNewClient = ({cliente}) => {
             </div>
             <div className="mb-4">
                 <label
-                    className="text-gray-800"
+                    className="text-gray-800 font-bold"
                     htmlFor="company"
                 >Company:</label>
                 <input 
@@ -30,7 +30,7 @@ const FieldsNewClient = ({cliente}) => {
 
             <div className="mb-4">
                 <label
-                    className="text-gray-800"
+                    className="text-gray-800 font-bold"
                     htmlFor="email"
                 >E-mail:</label>
                 <input 
@@ -44,7 +44,7 @@ const FieldsNewClient = ({cliente}) => {
 
             <div className="mb-4">
                 <label
-                    className="text-gray-800"
+                    className="text-gray-800 font-bold"
                     htmlFor="telephone"
                 >Telephone:</label>
                 <input 
@@ -58,7 +58,7 @@ const FieldsNewClient = ({cliente}) => {
 
             <div className="mb-4">
                 <label
-                    className="text-gray-800"
+                    className="text-gray-800 font-bold"
                     htmlFor="notes"
                 >Notes:</label>
                 <textarea
