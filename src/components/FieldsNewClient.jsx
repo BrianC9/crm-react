@@ -1,30 +1,30 @@
-const FormNewClient = ({cliente}) => {
+const FieldsNewClient = ({cliente}) => {
     return (
         <>
             <div className="mb-4">
                 <label
                     className="text-gray-800"
-                    htmlFor="nombre"
-                >Nombre:</label>
+                    htmlFor="name"
+                >Name:</label>
                 <input 
-                    id="nombre"
+                    id="name"
                     type="text"
                     className="mt-2 block w-full p-3 bg-gray-50"
-                    placeholder="Nombre del Cliente"
-                    name="nombre"
+                    placeholder="Client`s name"
+                    name="name"
                 />
             </div>
             <div className="mb-4">
                 <label
                     className="text-gray-800"
-                    htmlFor="empresa"
-                >Empresa:</label>
+                    htmlFor="company"
+                >Company:</label>
                 <input 
-                    id="empresa"
+                    id="company"
                     type="text"
                     className="mt-2 block w-full p-3 bg-gray-50"
-                    placeholder="Empresa del Cliente"
-                    name="empresa"
+                    placeholder="Client`s company"
+                    name="company"
                 />
             </div>
 
@@ -37,7 +37,7 @@ const FormNewClient = ({cliente}) => {
                     id="email"
                     type="email"
                     className="mt-2 block w-full p-3 bg-gray-50"
-                    placeholder="Email del Cliente"
+                    placeholder="Client`s email"
                     name="email"
                 />
             </div>
@@ -45,33 +45,33 @@ const FormNewClient = ({cliente}) => {
             <div className="mb-4">
                 <label
                     className="text-gray-800"
-                    htmlFor="telefono"
-                >Teléfono:</label>
+                    htmlFor="telephone"
+                >Telephone:</label>
                 <input 
-                    id="telefono"
+                    id="telephone"
                     type="tel"
                     className="mt-2 block w-full p-3 bg-gray-50"
-                    placeholder="Teléfono del Cliente"
-                    name="telefono"
+                    placeholder="Client`s telephone"
+                    name="telephone"
                 />
             </div>
 
             <div className="mb-4">
                 <label
                     className="text-gray-800"
-                    htmlFor="notas"
-                >Notas:</label>
+                    htmlFor="notes"
+                >Notes:</label>
                 <textarea
                     as="textarea"
-                    id="notas"
+                    id="notes"
                     type="text"
                     className="mt-2 block w-full p-3 bg-gray-50 h-40 align-self"
-                    placeholder="Notas del Cliente"
-                    name="notas"
+                    placeholder="Client`s notes"
+                    name="notes"
                 />
             </div>
         </>
     )
 }
 
-export default FormNewClient
+export default FieldsNewClient
