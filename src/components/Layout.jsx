@@ -7,9 +7,15 @@ function Layout() {
     <div className='md:w-1/4 bg-blue-900 px-5 py-10'>
       <h2 className='text-white text-center text-4xl font-bold'>C.R.M</h2>
       <nav className='mt-10 text-white flex flex-col'>
-        <Link to={'/newclient'} className="hover:text-blue-300">New Client</Link>
-        <Link to={'/'} className="hover:text-blue-300">Clients</Link>
-        <Link to={'/aboutus'} className="hover:text-blue-300">About Us</Link>
+        <Link 
+        to={'/'} 
+        className={`${location.pathname === "/" ? "text-blue-300":""} text-1xl hover:text-blue-300 py-2 `} >Clients</Link>
+        <Link 
+        to={'/newclient'} 
+        className={`${location.pathname === "/newclient" ? "text-blue-300":""} text-1xl hover:text-blue-300 py-2 `} >New Client</Link>
+        <Link 
+        to={'/aboutus'} 
+        className={`${location.pathname === "/aboutus" ? "text-blue-300":""} text-1xl hover:text-blue-300 py-2 `} >About Us</Link>
       </nav>
 
     </div>
