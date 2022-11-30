@@ -15,23 +15,31 @@ export async function action({request}){
   
 
   //Validación
-
   const errors = []
+  
   if(Object.values(curatedData).includes('')){
     errors.push("All the fields are required")
   }
+
+  const email = formData.get('email')
+  let regex = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
+
+  if(!regex.test(email)){
+    errors.push("Email format is not valid")
+  }
+
 
   // Retornar datos si hay errores
   if(Object.keys(errors).length){
     return errors
   }
-  
 }
 
 function NewClient() {
-
+  
   const navigate = useNavigate()
   const actionData = useActionData()
+  console.log(actionData)
   
   return (
     <>
@@ -48,11 +56,11 @@ function NewClient() {
 
     <div className='bg-white shadow rounded-md mx-auto md:w-3/4 px-6 p-10'>
 
-      {actionData?.length && actionData.map((error, i)=>(<ErrorForm key={i} >{error}</ErrorForm>))}
+      {actionData?.length && actionData.map((error, i)=>(<ErrorForm key={i+error.length} >{error}</ErrorForm>))}
 
       <Form
         method='post'
-        action={action}
+        noValidate
       >
       <FieldsNewClient/>
       <input

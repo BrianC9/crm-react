@@ -37,7 +37,7 @@ const FieldsNewClient = ({cliente}) => {
                     id="email"
                     type="email"
                     className="mt-2 block w-full p-3 bg-gray-50"
-                    placeholder="Client`s email"
+                    placeholder="name@email.com"
                     name="email"
                 />
             </div>

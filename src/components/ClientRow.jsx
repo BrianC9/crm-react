@@ -4,7 +4,7 @@ function ClientRow({client}) {
   return (
     <tr className="border-b font-medium text-lg">
       <td className="space-y-2 p-4 ">
-        <p>{nombre}</p>
+        <p className="font-bold">{nombre}</p>
         <p className="text-s">{empresa}</p>
       </td>
       <td className=" p-4 space-y-2">
