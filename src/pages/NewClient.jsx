@@ -1,7 +1,7 @@
 import {useNavigate, Form, useActionData, redirect} from 'react-router-dom'
 import FieldsNewClient from '../components/FieldsNewClient'
 import ErrorForm from '../components/ErrorForm'
-import { createClient } from '../api/clientsService'
+import { checkEmailExist, createClient } from '../api/clientsService'
 
 export async function action({request}){
   console.log("Submit al formulario")
@@ -28,8 +28,13 @@ export async function action({request}){
   if(!regex.test(email)){
     errors.push("Email format is not valid")
   }
-
-
+  
+  const exists = await checkEmailExist(email)
+  
+  if(exists === true){
+    errors.push("Email is already taken")
+  }
+  
   // Retornar datos si hay errores
   if(Object.keys(errors).length){
     return errors

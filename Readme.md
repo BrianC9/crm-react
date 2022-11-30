@@ -5,6 +5,7 @@
 3. Tailwind
 ## Features improved
 - Tanstack table
-- Fetching extenarl data from an API
+- Check if the email is taken to prevent email duplciates
+- Fetching external data from an API
 ### React tech stack:
 - React Router DOM V6

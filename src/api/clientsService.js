@@ -1,5 +1,3 @@
-import { json } from "react-router-dom";
-
 export async function getClients(){
     const response = await fetch(import.meta.env.VITE_API_URL)
     const result = await response.json()
@@ -38,12 +36,17 @@ export async function createClient(client){
     const result = await response.json()
     console.log(result)
 }
-
+export async function checkEmailExist(email){
+    
+    const clients = await getClients()
+    const exists = clients.some(client => client.email == email );
+    return exists;
+}
 export async function deleteClient(clientId){
     const response = await fetch(`${import.meta.env.VITE_API_URL}/${clientId}`, {
         method:'DELETE'
-        
+     
     })
     const result = await response.json()
-    console.log(result)
+    console.log("eliminando",clientId)
 }

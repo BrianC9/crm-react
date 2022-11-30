@@ -1,5 +1,5 @@
 import { useNavigate, useLoaderData, Form, redirect,useActionData } from "react-router-dom"
-import { getClient, updateClient } from "../api/clientsService"
+import { getClient, updateClient, checkEmailExist } from "../api/clientsService"
 import FieldsNewClient from "../components/FieldsNewClient"
 import ErrorForm from "../components/ErrorForm"
 
@@ -41,6 +41,11 @@ export async function action({request,params}){
       errors.push("Email format is not valid")
     }
   
+    const exists = await checkEmailExist(email)
+  
+    if(exists === true){
+        errors.push("Email is already taken")
+    }
   
     // Retornar datos si hay errores
     if(Object.keys(errors).length){

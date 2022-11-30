@@ -1,11 +1,12 @@
 {
   "clients": [
     {
-      "id": 1,
-      "name": "Juan",
-      "telephone": 102013313,
-      "email": "juan@juan.com",
-      "company": "Codigo Con Juan"
+      "name": "Juanito",
+      "company": "Codigo Con Juan",
+      "email": "pedrddo@juan.com",
+      "telephone": "102013313",
+      "notes": "notas",
+      "id": 1
     },
     {
       "id": 2,
@@ -38,27 +39,11 @@
     },
     {
       "name": "Bryan",
-      "company": "dev",
-      "email": "brianocm9@gmail.com",
+      "company": "sdas",
+      "email": "pedro@juan.com",
       "telephone": "601211373",
-      "notes": "dasd",
+      "notes": "das",
       "id": 6
-    },
-    {
-      "name": "Bryan Cusme",
-      "company": "hola",
-      "email": "brianocm9@gmail.com",
-      "telephone": "601211373",
-      "notes": "asd",
-      "id": 7
-    },
-    {
-      "name": "Bryan Editado",
-      "company": "edtiado",
-      "email": "editado@editado.com",
-      "telephone": "601211373",
-      "notes": "dasEDITADO",
-      "id": 8
     }
   ]
 }
