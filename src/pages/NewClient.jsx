@@ -44,7 +44,7 @@ function NewClient() {
   return (
     <>
     <h1 className='text-4xl text-blue-900 font-black'>New Client</h1>
-    <p className="my-3">Add a new client</p>
+    <p className="my-3">Fill the form</p>
     <div className='flex justify-center'>
       <button
         className='font-bold uppercase bg-blue-800 text-white  px-4 py-2 rounded-lg my-6 mb-9'
@@ -65,7 +65,7 @@ function NewClient() {
       <FieldsNewClient/>
       <input
         type="submit"
-        className='mt-5 w-full bg-blue-800 hover:bg-blue-600 hover:ring-2 uppercase font-semibold text-white text-lg rounded-lg py-1'
+        className='mt-5 w-full bg-teal-800 hover:bg-teal-600 hover:ring-2 hover:ring-teal-600 uppercase font-semibold text-white text-lg rounded-lg py-1'
         value="Register client"
       />
       </Form>
