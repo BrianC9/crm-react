@@ -3,8 +3,8 @@ function Layout() {
   const location = useLocation();
   return (
 <header className='md:flex md:min-h-screen'>
-    <div className='md:w-1/4 bg-blue-900 px-5 py-10'>
-      <h2 className='text-white text-center text-4xl font-bold'>C.R.M</h2>
+    <div className='md:w-1/4 bg-blue-900 p-10'>
+      <h2 className='text-white text-4xl font-bold'>C.R.M</h2>
       <nav className='mt-10 text-white flex flex-col'>
         <Link 
         to={'/'} 

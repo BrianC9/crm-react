@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import ClientRow from "../components/ClientRow";
-import { getClients } from "../api/clients";
+import { getClients } from "../api/clientsService";
 export function loader(){
   const clients = getClients()
 

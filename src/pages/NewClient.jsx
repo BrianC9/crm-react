@@ -1,7 +1,7 @@
-import {useNavigate, Form, useActionData} from 'react-router-dom'
+import {useNavigate, Form, useActionData, redirect} from 'react-router-dom'
 import FieldsNewClient from '../components/FieldsNewClient'
 import ErrorForm from '../components/ErrorForm'
-
+import { createClient } from '../api/clientsService'
 export async function action({request}){
   console.log("Submit al formulario")
 
@@ -33,6 +33,11 @@ export async function action({request}){
   if(Object.keys(errors).length){
     return errors
   }
+
+  // Validación correcta
+  await createClient(curatedData);
+
+  return redirect('/')
 }
 
 function NewClient() {
