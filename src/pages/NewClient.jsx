@@ -2,6 +2,7 @@ import {useNavigate, Form, useActionData, redirect} from 'react-router-dom'
 import FieldsNewClient from '../components/FieldsNewClient'
 import ErrorForm from '../components/ErrorForm'
 import { createClient } from '../api/clientsService'
+
 export async function action({request}){
   console.log("Submit al formulario")
 
@@ -43,8 +44,8 @@ export async function action({request}){
 function NewClient() {
   
   const navigate = useNavigate()
-  const actionData = useActionData()
-  console.log(actionData)
+  const errors = useActionData()
+  console.log(errors)
   
   return (
     <>
@@ -61,7 +62,7 @@ function NewClient() {
 
     <div className='bg-white shadow rounded-md mx-auto md:w-3/4 px-6 p-10'>
 
-      {actionData?.length && actionData.map((error, i)=>(<ErrorForm key={i+error.length} >{error}</ErrorForm>))}
+      {errors?.length && errors.map((error, i)=>(<ErrorForm key={i+error.length} >{error}</ErrorForm>))}
 
       <Form
         method='post'

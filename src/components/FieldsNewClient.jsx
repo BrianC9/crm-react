@@ -1,4 +1,4 @@
-const FieldsNewClient = ({cliente}) => {
+const FieldsNewClient = ({client}) => {
     return (
         <>
             <div className="mb-4">
@@ -12,6 +12,7 @@ const FieldsNewClient = ({cliente}) => {
                     className="mt-2 block w-full p-3 bg-gray-50"
                     placeholder="Client`s name"
                     name="name"
+                    defaultValue={client?.name}
                 />
             </div>
             <div className="mb-4">
@@ -25,6 +26,8 @@ const FieldsNewClient = ({cliente}) => {
                     className="mt-2 block w-full p-3 bg-gray-50"
                     placeholder="Client`s company"
                     name="company"
+                    defaultValue={client?.company}
+
                 />
             </div>
 
@@ -39,6 +42,8 @@ const FieldsNewClient = ({cliente}) => {
                     className="mt-2 block w-full p-3 bg-gray-50"
                     placeholder="name@email.com"
                     name="email"
+                    defaultValue={client?.email}
+
                 />
             </div>
 
@@ -53,6 +58,8 @@ const FieldsNewClient = ({cliente}) => {
                     className="mt-2 block w-full p-3 bg-gray-50"
                     placeholder="Client`s telephone"
                     name="telephone"
+                    defaultValue={client?.telephone}
+
                 />
             </div>
 
@@ -68,6 +75,8 @@ const FieldsNewClient = ({cliente}) => {
                     className="mt-2 block w-full p-3 bg-gray-50 h-40 align-self"
                     placeholder="Client`s notes"
                     name="notes"
+                    defaultValue={client?.notes}
+
                 />
             </div>
         </>

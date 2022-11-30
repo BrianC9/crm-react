@@ -1,6 +1,7 @@
-import { deleteClient } from "../api/clientsService";
+import { useNavigate } from "react-router-dom";
 
 function ClientRow({client}) {
+  const navigate = useNavigate()
   const {email, name,company,telephone,id} = client;
    
   return (
@@ -14,10 +15,11 @@ function ClientRow({client}) {
         <p><span className="font-bold">Tel: </span>{telephone}</p>
         
       </td>
-      <td className="p-4 space-x-3">
+      <td className="p-4 space-x-3 md:flex ">
       <button 
         type="button" 
         className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br hover:ring-4  hover:ring-blue-300 dark:hover:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
+        onClick={()=> navigate(`/clients/${id}/edit`)}
         >
         
         Edit

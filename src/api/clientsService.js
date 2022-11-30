@@ -6,6 +6,26 @@ export async function getClients(){
     console.log(result);
     return result;
 }
+
+export async function getClient(clientId){
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/${clientId}`)
+    const result = await response.json()
+    console.log(result);
+    return result;
+}
+
+export async function updateClient(clientId, client){
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/${clientId}`,{
+        method: "PUT",
+        headers:
+        {
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify(client)
+    })
+    const result = await response.json();
+    console.log("Update Request",result);
+}
 export async function createClient(client){
     const response = await fetch(import.meta.env.VITE_API_URL,{
         method: 'POST',

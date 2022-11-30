@@ -1,65 +1,64 @@
 {
   "clients": [
-    
-      {
-        "id": 1,
-        "name": "Juan",
-        "telephone": 102013313,
-        "email": "juan@juan.com",
-        "company": "Codigo Con Juan"
-      },
-      {
-        "id": 2,
-        "name": "Karen",
-        "telephone": 138198313,
-        "email": "karen@juan.com",
-        "company": "Codigo Con Juan"
-      },
-      {
-        "id": 3,
-        "name": "Josue",
-        "telephone": 31983913,
-        "email": "josue@juan.com",
-        "company": "Codigo Con Juan"
-      },
-      {
-        "id": 4,
-        "name": "Miguel",
-        "telephone": 319381983,
-        "email": "miguel@juan.com",
-        "company": "Codigo Con Juan"
-      },
-      {
-        "id": 5,
-        "name": "Pedro",
-        "telephone": 1398198938,
-        "email": "pedro@juan.com",
-        "company": "Codigo Con Juan"
-      },
-      {
-        "name": "Bryan",
-        "company": "dev",
-        "email": "brianocm9@gmail.com",
-        "telephone": "601211373",
-        "notes": "dasd",
-        "id": 6
-      },
-      {
-        "name": "Bryan Cusme",
-        "company": "hola",
-        "email": "brianocm9@gmail.com",
-        "telephone": "601211373",
-        "notes": "asd",
-        "id": 7
-      },
-      {
-        "name": "Bryan Cusme",
-        "company": "das",
-        "email": "brianocm9@gmail.com",
-        "telephone": "601211373",
-        "notes": "das",
-        "id": 8
-      }
-    
+    {
+      "id": 1,
+      "name": "Juan",
+      "telephone": 102013313,
+      "email": "juan@juan.com",
+      "company": "Codigo Con Juan"
+    },
+    {
+      "id": 2,
+      "name": "Karen",
+      "telephone": 138198313,
+      "email": "karen@juan.com",
+      "company": "Codigo Con Juan"
+    },
+    {
+      "name": "Josue",
+      "company": "Codigo",
+      "email": "josue@juan.com",
+      "telephone": "31983913",
+      "notes": "notas",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "Miguel",
+      "telephone": 319381983,
+      "email": "miguel@juan.com",
+      "company": "Codigo Con Juan"
+    },
+    {
+      "id": 5,
+      "name": "Pedro",
+      "telephone": 1398198938,
+      "email": "pedro@juan.com",
+      "company": "Codigo Con Juan"
+    },
+    {
+      "name": "Bryan",
+      "company": "dev",
+      "email": "brianocm9@gmail.com",
+      "telephone": "601211373",
+      "notes": "dasd",
+      "id": 6
+    },
+    {
+      "name": "Bryan Cusme",
+      "company": "hola",
+      "email": "brianocm9@gmail.com",
+      "telephone": "601211373",
+      "notes": "asd",
+      "id": 7
+    },
+    {
+      "name": "Bryan Editado",
+      "company": "edtiado",
+      "email": "editado@editado.com",
+      "telephone": "601211373",
+      "notes": "dasEDITADO",
+      "id": 8
+    }
   ]
 }

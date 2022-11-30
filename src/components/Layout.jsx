@@ -10,7 +10,7 @@ function Layout() {
         to={'/'} 
         className={`${location.pathname === "/" ? "text-blue-300":""} text-1xl hover:text-blue-300 py-2 `} >Clients</Link>
         <Link 
-        to={'/newclient'} 
+        to={'/clients/new'} 
         className={`${location.pathname === "/newclient" ? "text-blue-300":""} text-1xl hover:text-blue-300 py-2 `} >New Client</Link>
         <Link 
         to={'/aboutus'} 

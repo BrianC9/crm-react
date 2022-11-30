@@ -1,8 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import ClientRow from "../components/ClientRow";
 import { getClients } from "../api/clientsService";
-export function loader(){
-  const clients = getClients()
+export async function loader(){
+  const clients = await getClients()
 
   return clients
 }
@@ -12,7 +12,7 @@ function Index() {
 
   return (
       <>
-    <h1 className='text-4xl text-blue-900 font-black'>Clientes</h1>
+    <h1 className='text-4xl text-blue-900 font-black'>Clients</h1>
     <p className="my-3">Manage your clients</p>
 {clients.length ? (
   <table className="w-full bg-white shadow table-auto rounded-lg "  border={1}>
