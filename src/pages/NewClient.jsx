@@ -65,7 +65,7 @@ function NewClient() {
       </button>
     </div>
 
-    <div className='bg-white shadow rounded-md mx-auto md:w-3/4 px-6 p-10'>
+    <div className='bg-gray shadow lg:max-w-2xl rounded-md mx-auto md:w-3/4 px-6 p-10'>
 
       {errors?.length && errors.map((error, i)=>(<ErrorForm key={i+error.length} >{error}</ErrorForm>))}
 
@@ -76,7 +76,7 @@ function NewClient() {
       <FieldsNewClient/>
       <input
         type="submit"
-        className='mt-5 w-full bg-teal-800 hover:bg-teal-600 hover:ring-2 hover:ring-teal-600 uppercase font-semibold text-white text-lg rounded-lg py-1'
+        className='mt-5 w-full bg-teal-700 hover:bg-teal-500 hover:ring-2 hover:ring-teal-400 uppercase font-semibold text-white text-lg rounded-lg py-1'
         value="Register client"
       />
       </Form>
